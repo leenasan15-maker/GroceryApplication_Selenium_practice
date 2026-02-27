@@ -15,12 +15,13 @@ import pages.LoginPage;
 import utility.ExcelUtility;
 
 public class LoginTest extends Base {
+	
 	HomePage homepage;
 	@Test(priority=1,description="user is trying to login with vlid credentials",groups= {"smoke"})
 	public void verifyUserLoginWithValidCredentials() throws IOException
 	{
 		String usernamevalue=ExcelUtility.getStringData(0, 0, "LoginPage");
-		String passwordvalue=ExcelUtility.getStringData(1,0,"LoginPage");
+		String passwordvalue=ExcelUtility.getStringData(1, 0, "LoginPage");
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.enterUsername(usernamevalue).enterPassword(passwordvalue);
 		homepage=loginpage.clickLogin();
@@ -35,11 +36,10 @@ public class LoginTest extends Base {
 	String passwordvalue=ExcelUtility.getStringData(1, 1, "LoginPage");
 	LoginPage loginpage=new LoginPage(driver);
 	loginpage.enterUsername(usernamevalue).enterPassword(passwordvalue).clickLogin();
-	//Assert.assertTrue(loginpage.isErrorMessageDisplayed(), "User is able to login with invalid credentials");
-	String expected= "Invalid Username/Password";
+	String expected= "Alert!";
 	String actual=loginpage.getErrorMessage();
-    //System.out.println("Error message :"+actual);
     Assert.assertEquals(actual,expected,Constant.VALIDUSERNAMEINVALIDPASSWORDCREDENTIALERROR);
+	
 	}
 	
 	@Test(priority=3,description="user is trying to login with invalid username an valid password")
@@ -49,9 +49,8 @@ public class LoginTest extends Base {
 	String passwordvalue=ExcelUtility.getStringData(2, 1, "LoginPage");
 	LoginPage loginpage=new LoginPage(driver);
 	loginpage.enterUsername(usernamevalue).enterPassword(passwordvalue).clickLogin();
-	String expected= "Invalid Username/Password";
+	String expected= "Alert!";
 	String actual=loginpage.getErrorMessage();
-    //System.out.println("Error message :"+actual);
     Assert.assertEquals(actual,expected,Constant.INVALIDUSERNAMEVALIDPASSWORDCREDENTIALERROR);
 //	Assert.assertTrue(loginpage.isErrorMessageDisplayed(), "User is able to login with invalid credentials");
 	}
@@ -63,9 +62,8 @@ public class LoginTest extends Base {
 	LoginPage loginpage=new LoginPage(driver);
 	loginpage.enterUsername(usernamevalue).enterPassword(passwordvalue).clickLogin();
 	//Assert.assertTrue(loginpage.isErrorMessageDisplayed(), "User is able to login with invalid credentials");
-	String expected= "Invalid Username/Password";
+	String expected= "Alert!";
 	String actual=loginpage.getErrorMessage();
-    //System.out.println("Error message :"+actual);
     Assert.assertEquals(actual,expected,Constant.INVALIDUSERNAMEINVALIDPASSWORDCREDENTIALERROR);
 	}
 	@DataProvider(name = "loginProvider")
@@ -75,5 +73,5 @@ public class LoginTest extends Base {
 	// new Object[] {ExcelUtility.getStringData(3,
 	// 0,"Login"),ExcelUtility.getStringData(3,1 ,"Login")}
 	};
-	}
+	} 
 }

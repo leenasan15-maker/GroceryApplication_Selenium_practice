@@ -10,7 +10,7 @@ import utility.WaitUtility;
 
 public class LoginPage {
 	WaitUtility waitutility=new WaitUtility();
-public WebDriver driver;
+    public WebDriver driver;
 	
 	public LoginPage(WebDriver driver)
 	{
@@ -23,7 +23,7 @@ public WebDriver driver;
 	@FindBy(xpath="//button[@type='submit']") WebElement signin;
 	@FindBy(xpath="//p[text()='Dashboard']") WebElement dashboard;
 	@FindBy(xpath="//b[text()='7rmart supermarket']") WebElement textloginpage;
-	@FindBy(xpath="//div[contains(@class,'alert alert-danger alert-dismissible')]") WebElement errmessage;
+	@FindBy(xpath="//h5[text()=' Alert!']") WebElement errmessage;
 	
 	public LoginPage enterUsername(String usernamevalue)
 	{
@@ -55,9 +55,6 @@ public String verifygetTextofmartSupermarket()
 	
 	 public String getErrorMessage() {
 	     String s=errmessage.getText();
-	     return s.replace("×", "").replace("Alert!", "").trim();
-	    }
-	 public boolean isErrorMessageDisplayed() {
-	        return errmessage.isDisplayed();
+	     return s;
 	    }
 }

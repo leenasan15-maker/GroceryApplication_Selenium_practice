@@ -2,95 +2,16 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-23T22:30:46 GST" name="Suite" finished-at="2026-02-23T22:31:04 GST" duration-ms="18801">
+  <suite started-at="2026-02-27T13:47:20 GST" name="Suite" finished-at="2026-02-27T13:47:35 GST" duration-ms="14571">
     <groups>
       <group name="smoke">
-        <method signature="LoginTest.verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@69ee81fc]" name="verifyUserLoginWithInvalidUsernameandInvalidPassword" class="testscript.LoginTest"/>
+        <method signature="LoginTest.verifyUserLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@1df8da7a]" name="verifyUserLoginWithValidCredentials" class="testscript.LoginTest"/>
+        <method signature="LoginTest.verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@1df8da7a]" name="verifyUserLoginWithInvalidUsernameandInvalidPassword" class="testscript.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-02-23T22:30:46 GST" name="Test" finished-at="2026-02-23T22:31:04 GST" duration-ms="18801">
-      <class name="testscript.AdminUserTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.AdminUserTest@3e2055d6]" started-at="2026-02-23T22:30:51 GST" name="initializeBrowser" finished-at="2026-02-23T22:30:52 GST" duration-ms="1682" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="reset()[pri:0, instance:testscript.AdminUserTest@3e2055d6]" started-at="2026-02-23T22:30:52 GST" name="reset" finished-at="2026-02-23T22:30:56 GST" duration-ms="3777" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reset -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.AdminUserTest@3e2055d6]" started-at="2026-02-23T22:30:56 GST" name="closeBrowser" finished-at="2026-02-23T22:30:56 GST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=reset status=SUCCESS method=AdminUserTest.reset()[pri:0, instance:testscript.AdminUserTest@3e2055d6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.AdminUserTest@3e2055d6]" started-at="2026-02-23T22:30:56 GST" name="initializeBrowser" finished-at="2026-02-23T22:30:58 GST" duration-ms="1782" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyNewUserAdminAddedSuccessfully()[pri:0, instance:testscript.AdminUserTest@3e2055d6]" started-at="2026-02-23T22:30:58 GST" name="verifyNewUserAdminAddedSuccessfully" description="user is trying to add new admin user" finished-at="2026-02-23T22:31:01 GST" duration-ms="3014" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewUserAdminAddedSuccessfully -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.AdminUserTest@3e2055d6]" started-at="2026-02-23T22:31:01 GST" name="closeBrowser" finished-at="2026-02-23T22:31:01 GST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNewUserAdminAddedSuccessfully status=SUCCESS method=AdminUserTest.verifyNewUserAdminAddedSuccessfully()[pri:0, instance:testscript.AdminUserTest@3e2055d6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.AdminUserTest@3e2055d6]" started-at="2026-02-23T22:31:01 GST" name="initializeBrowser" finished-at="2026-02-23T22:31:03 GST" duration-ms="1782" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifySearch()[pri:0, instance:testscript.AdminUserTest@3e2055d6]" started-at="2026-02-23T22:31:03 GST" name="verifySearch" description="user is trying to search the newly added users" finished-at="2026-02-23T22:31:04 GST" duration-ms="1662" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearch -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.AdminUserTest@3e2055d6]" started-at="2026-02-23T22:31:04 GST" name="closeBrowser" finished-at="2026-02-23T22:31:04 GST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearch status=SUCCESS method=AdminUserTest.verifySearch()[pri:0, instance:testscript.AdminUserTest@3e2055d6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testscript.AdminUserTest -->
+    <test started-at="2026-02-27T13:47:20 GST" name="Test" finished-at="2026-02-27T13:47:35 GST" duration-ms="14571">
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@69ee81fc]" started-at="2026-02-23T22:30:46 GST" name="initializeBrowser" finished-at="2026-02-23T22:30:48 GST" duration-ms="2203" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:20 GST" name="initializeBrowser" finished-at="2026-02-27T13:47:22 GST" duration-ms="2268" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +22,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@69ee81fc]" started-at="2026-02-23T22:30:48 GST" name="verifyUserLoginWithInvalidUsernameandInvalidPassword" description="user is trying to login with invalid username an invalid password" data-provider="loginProvider" finished-at="2026-02-23T22:30:48 GST" duration-ms="555" status="PASS">
+        <test-method signature="verifyUserLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:22 GST" name="verifyUserLoginWithValidCredentials" description="user is trying to login with vlid credentials" finished-at="2026-02-27T13:47:25 GST" duration-ms="2355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginWithValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:25 GST" name="closeBrowser" finished-at="2026-02-27T13:47:25 GST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLoginWithValidCredentials status=SUCCESS method=LoginTest.verifyUserLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@1df8da7a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:25 GST" name="initializeBrowser" finished-at="2026-02-27T13:47:27 GST" duration-ms="1951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyUserLoginWithValidUsernameandInvalidPassword()[pri:2, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:27 GST" name="verifyUserLoginWithValidUsernameandInvalidPassword" description="user is trying to login with valid username an invalid password" finished-at="2026-02-27T13:47:27 GST" duration-ms="711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginWithValidUsernameandInvalidPassword -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:27 GST" name="closeBrowser" finished-at="2026-02-27T13:47:27 GST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLoginWithValidUsernameandInvalidPassword status=SUCCESS method=LoginTest.verifyUserLoginWithValidUsernameandInvalidPassword()[pri:2, instance:testscript.LoginTest@1df8da7a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:27 GST" name="initializeBrowser" finished-at="2026-02-27T13:47:29 GST" duration-ms="1844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyUserLoginWithInvalidUsernameandvalidPassword()[pri:3, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:29 GST" name="verifyUserLoginWithInvalidUsernameandvalidPassword" description="user is trying to login with invalid username an valid password" finished-at="2026-02-27T13:47:30 GST" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginWithInvalidUsernameandvalidPassword -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:30 GST" name="closeBrowser" finished-at="2026-02-27T13:47:30 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLoginWithInvalidUsernameandvalidPassword status=SUCCESS method=LoginTest.verifyUserLoginWithInvalidUsernameandvalidPassword()[pri:3, instance:testscript.LoginTest@1df8da7a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:30 GST" name="initializeBrowser" finished-at="2026-02-27T13:47:32 GST" duration-ms="1903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:32 GST" name="verifyUserLoginWithInvalidUsernameandInvalidPassword" description="user is trying to login with invalid username an invalid password" data-provider="loginProvider" finished-at="2026-02-27T13:47:32 GST" duration-ms="474" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,18 +116,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginWithInvalidUsernameandInvalidPassword -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@69ee81fc]" started-at="2026-02-23T22:30:48 GST" name="closeBrowser" finished-at="2026-02-23T22:30:48 GST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:32 GST" name="closeBrowser" finished-at="2026-02-27T13:47:32 GST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserLoginWithInvalidUsernameandInvalidPassword status=SUCCESS method=LoginTest.verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@69ee81fc] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserLoginWithInvalidUsernameandInvalidPassword status=SUCCESS method=LoginTest.verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@1df8da7a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@69ee81fc]" started-at="2026-02-23T22:30:48 GST" name="initializeBrowser" finished-at="2026-02-23T22:30:50 GST" duration-ms="1753" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:32 GST" name="initializeBrowser" finished-at="2026-02-27T13:47:34 GST" duration-ms="1771" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,7 +138,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@69ee81fc]" started-at="2026-02-23T22:30:50 GST" name="verifyUserLoginWithInvalidUsernameandInvalidPassword" description="user is trying to login with invalid username an invalid password" data-provider="loginProvider" finished-at="2026-02-23T22:30:51 GST" duration-ms="502" status="PASS">
+        <test-method signature="verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:34 GST" name="verifyUserLoginWithInvalidUsernameandInvalidPassword" description="user is trying to login with invalid username an invalid password" data-provider="loginProvider" finished-at="2026-02-27T13:47:35 GST" duration-ms="571" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,11 +154,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoginWithInvalidUsernameandInvalidPassword -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@69ee81fc]" started-at="2026-02-23T22:30:51 GST" name="closeBrowser" finished-at="2026-02-23T22:30:51 GST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@1df8da7a]" started-at="2026-02-27T13:47:35 GST" name="closeBrowser" finished-at="2026-02-27T13:47:35 GST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserLoginWithInvalidUsernameandInvalidPassword status=SUCCESS method=LoginTest.verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@69ee81fc] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserLoginWithInvalidUsernameandInvalidPassword status=SUCCESS method=LoginTest.verifyUserLoginWithInvalidUsernameandInvalidPassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@1df8da7a] output={null}]]]>
               </value>
             </param>
           </params>

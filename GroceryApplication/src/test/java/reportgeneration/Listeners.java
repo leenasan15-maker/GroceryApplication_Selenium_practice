@@ -9,6 +9,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import automationcore.Base;
 import utility.ExtendReportUtility;
 
 public class Listeners implements ITestListener{
@@ -37,36 +38,14 @@ public class Listeners implements ITestListener{
 
 	extentTest.get().log(Status.FAIL, "Test Failed");
 	extentTest.get().fail(result.getThrowable());
+	
+	 Base base = (Base) result.getInstance();
+	    WebDriver driver = base.driver;
+	//WebDriver driver = null;
 
-	WebDriver driver = null;
+	//String testMethodName = result.getMethod().getMethodName();
 
-	String testMethodName = result.getMethod().getMethodName();
-
-	try {
-
-	driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
-	.get(result.getInstance());
-	} catch (IllegalArgumentException e) {
-
-	e.printStackTrace();
-	} catch (IllegalAccessException e) {
-
-	e.printStackTrace();
-	} catch (NoSuchFieldException e) {
-
-	e.printStackTrace();
-	} catch (SecurityException e) {
-
-	e.printStackTrace();
 	}
-
-	try {
-	driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
-	.get(result.getInstance());
-	} catch (Exception e) {
-	}
-	}
-
 	public void onTestSkipped(ITestResult result) {
 
 	ITestListener.super.onTestSkipped(result);
